@@ -1,0 +1,23 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // deprecated in newer versions of Gradle, but still required for some libraries
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.google.gms:google-services:4.3.10'
+    }
+}
+plugins {
+    id 'com.android.application' version '7.4.0' apply false
+    id 'com.android.library' version '7.4.0' apply false
+}
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // deprecated in newer versions of Gradle, but still required for some libraries
+    }
+}

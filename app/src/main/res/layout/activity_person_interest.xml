@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:context=".acitivities.PersonInterestActivity">-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivities.PersonInterestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/backbtn" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/presons_name"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="@dimen/dp5"
+                android:text="Person's Name"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <View style="@style/setting_line_style" />
+
+        <TextView
+            android:id="@+id/create_match"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="top"
+            android:text="Person's Interest"
+            android:textAppearance="@style/add_person_"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp20"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/t_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/dp16"
+            app:cardCornerRadius="@dimen/dp10"
+            app:cardElevation="@dimen/dp2"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/thomas_j_pe_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="Please wait while your pickup lines is generating"
+                    android:textAppearance="@style/it_is_a_lon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/copy_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/copy"></ImageView>
+
+                        <TextView
+                            android:id="@+id/first_inter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="top"
+                            android:lineSpacingExtra="1sp"
+                            android:text="Copy Text"
+                            android:textAppearance="@style/first_inter"
+                            android:translationY="-0.52sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fav_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fav_img"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/save_selector" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="top"
+                            android:lineSpacingExtra="1sp"
+                            android:text="Save"
+                            android:textAppearance="@style/first_inter"
+                            android:translationY="-0.52sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="bottom"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:layout_marginHorizontal="32dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="44dp"-->
+<!--                android:background="@drawable/btn_design"-->
+<!--                android:text="Regenerate"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:visibility="gone"-->
+<!--                tools:ignore="MissingConstraints" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="bottom"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:layout_marginHorizontal="32dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="44dp"-->
+<!--                android:background="@drawable/btn_design"-->
+<!--                android:text="Regenerate"-->
+<!--                android:visibility="gone"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                tools:ignore="MissingConstraints" />-->
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/feedback_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="38dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Regenerate the response with feedback"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+
+            <View style="@style/profile_line_style" />
+
+            <Button
+                android:id="@+id/regenerate_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="44dp"
+                android:background="@drawable/btn_design"
+                android:text="Regenerate"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </ScrollView>-->

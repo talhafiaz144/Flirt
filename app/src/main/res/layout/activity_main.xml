@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/dots_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/dot_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/dot_active" />
+
+            <ImageView
+                android:id="@+id/dot_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/dot_inactive" />
+
+            <ImageView
+                android:id="@+id/dot_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dot_inactive" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/your_ai_dat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-5sp"
+            android:text="@string/your_ai_dat"
+            android:textAppearance="@style/your_ai_dat"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/need_help_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/your_ai_dat"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/need_help_c"
+            android:textAppearance="@style/need_help_c" />
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp30"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/get_started"
+            android:layout_width="199dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_design"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/my_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:text="Get Started "
+                android:textStyle="bold"
+                android:textAppearance="@style/get_started"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/my_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward_btn" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

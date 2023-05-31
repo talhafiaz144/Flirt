@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivities.RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/backbtn" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Log In -->
+        <TextView
+            android:id="@+id/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="top"
+            android:text="Sign up"
+            android:textAppearance="@style/log_in"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/please_ente"
+            android:layout_width="288dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="28dp"
+            android:lineSpacingExtra="1sp"
+            android:text="Please enter the required information"
+            android:textAppearance="@style/please_ente" />
+
+        <EditText
+            android:id="@+id/f_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="First name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/l_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Last name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:hint="MM/DD/YYYY"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/email_Edit_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/password_Edit_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/c_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_design"
+            android:text="Done"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

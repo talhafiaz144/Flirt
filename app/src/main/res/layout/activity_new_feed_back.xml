@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivities.extras.newFeedBackActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/black"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_btn1"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/backbtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Feedback"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp70"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/t_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/dp16"
+            app:cardCornerRadius="@dimen/dp10"
+            app:cardElevation="@dimen/dp2"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/thomas_j_pe1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Hey Rachel, you must love biking because you've stolen my heart and taken me for a ride."
+                    android:textAppearance="@style/it_is_a_lon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/copy_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/copy"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/first_inter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="top"
+                            android:lineSpacingExtra="1sp"
+                            android:text="Copy Text"
+                            android:textAppearance="@style/first_inter"
+                            android:translationY="-0.52sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fav_icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fav_img1"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@drawable/saved"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="top"
+                            android:lineSpacingExtra="1sp"
+                            android:text="Save"
+                            android:textAppearance="@style/first_inter"
+                            android:translationY="-0.52sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="left"
+            android:lineSpacingExtra="1sp"
+            android:text="Pickup line feedback"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/dp16"
+            app:cardCornerRadius="@dimen/dp10"
+            app:cardElevation="@dimen/dp2"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/feedback_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:hint="Don't mention that she likes pizza"
+                    android:inputType="textMultiLine"
+                    android:textAppearance="@style/it_is_a_lon"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regenerate_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/btn_design"
+        android:text="Regenerate"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

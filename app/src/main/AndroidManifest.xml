@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:node="remove" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlirtAndroid"
+        tools:targetApi="31">
+        <activity
+            android:name=".acitivities.extras.newFeedBackActivity"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".acitivities.extras.newPersonInterestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.extras.Upload_AddInterestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+
+        <service
+            android:name=".Utils.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".acitivities.extras.DetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.VerifyCodeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.SignedUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.FeedBackActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.PersonInterestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.ManageAccountActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.ChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.PrivacyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.SubscriptionAcitivty"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.EditAccountActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.AddInterestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.CreateMatchActivity"
+            android:exported="false"
+            android:label="CreateMatchActivity"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+        <activity
+            android:name=".acitivities.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="Basic-D"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".acitivities.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.FlirtAndroid.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>

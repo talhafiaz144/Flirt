@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivities.CreateMatchActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/backbtn" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/create_match"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="top"
+            android:text="Create new match"
+            android:textAppearance="@style/log_in"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:maxLines="2"
+            android:text="Please enter the name of new user"
+            android:textAppearance="@style/please_ente"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="25dp"
+            android:hint="First name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_interest_text"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="25dp"
+            android:text="Add Person's Interest"
+            android:textAppearance="@style/log_in"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/upload_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_light_design"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Upload a Screenshot"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="@dimen/dp20"
+            android:gravity="center"
+            android:text="or"
+            android:textAppearance="@style/or" />
+
+        <LinearLayout
+            android:id="@+id/add_manual_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_light_design"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Add Interest Manually"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

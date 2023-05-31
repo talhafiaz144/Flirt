@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivities.VerifyCodeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/backbtn" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Log In -->
+        <TextView
+            android:id="@+id/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="top"
+            android:text="Enter Code"
+            android:textAppearance="@style/log_in"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="2"
+            android:text="Please enter your email we will send you OPT there to verify you"
+            android:textAppearance="@style/please_ente"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/code_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/text_edit1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/text_edit2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/text_edit3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/text_edit4"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:padding="8dp"
+                android:text="(01:00)"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/regenerate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Resend OTP"
+                    android:textColor="#D14D72"
+                    android:textSize="16sp" />
+
+                <View style="@style/otp_line_style" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_design"
+            android:text="Verify Code"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

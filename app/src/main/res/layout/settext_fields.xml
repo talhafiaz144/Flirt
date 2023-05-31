@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/interest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="@dimen/dp20"
+        android:background="@drawable/rectangle_3"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/my_textview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:text="Cat Lover"
+            android:textAppearance="@style/continue_wi" />
+
+        <ImageView
+            android:id="@+id/my_imageview"
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/drag_icon" />
+    </LinearLayout>
+
+
+</LinearLayout>

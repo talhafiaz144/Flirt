@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/add_match_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_design"
+            android:text="Add new match"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="5dp"
+            android:text="Recently Match"
+            android:textAppearance="@style/recently_ma"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/empty_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="No items to display."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:visibility="gone"
+            tools:listitem="@layout/item_layout" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:indeterminate="true"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

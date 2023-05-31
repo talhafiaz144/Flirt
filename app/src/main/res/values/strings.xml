@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Flirt Android</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="need_help_c">Need help coming up with a quick and witty response? Just upload a screenshot of your conversation, and this app will generate replies for you</string>
+    <string name="your_ai_dat">Your AI Dating \nAssistant</string>
+    <string name="already_acc">Already have account?  <b>Log in</b></string>
+    <string name="not_already_acc">Do not have an account?  <b>Sign up</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_otpactivity">OTPActivity</string>
+    <string name="title_activity_bottom_bar">BottomBarActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_persons_interest">PersonsInterestActivity</string>
+    <string name="it_is_a_lon">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</string>
+</resources>

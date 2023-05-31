@@ -1,0 +1,221 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="LoewFontStyle">
+        <item name="android:fontFamily">@values/loew_regular</item>
+    </style>
+
+
+    <style name="remember_me">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+    <style name="DialogAnimation">
+
+    </style>
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+    <style name="it_is_a_lon">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="profile_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/dp18</item>
+        <item name="android:paddingEnd">@dimen/dp18</item>
+        <item name="android:paddingTop">@dimen/dp12</item>
+        <item name="android:paddingBottom">@dimen/dp12</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="profile_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginEnd">47dp</item>
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="setting_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginEnd">35dp</item>
+        <item name="android:layout_marginStart">23dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="login_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="otp_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:background">#D14D72</item>
+    </style>
+
+    <style name="pickup_line">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="add_person_">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="yesterday">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="thomas_j_pe">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="first_inter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="recently_ma">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+    </style>
+    <style name="ShareDialogAnimation">
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="mytheme" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Dialog">
+        <!-- Define color properties as desired -->
+        <!-- Define window properties as desired -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SpinnerTextViewItem" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="myRatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+    <style name="darkRatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+    <style name="flirt">
+        <item name="android:textSize">100sp</item>
+    </style>
+
+    <!-- strings.xml -->
+    <string name="flirt">
+Flirt
+</string>
+
+    <style name="your_ai_dat">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="get_started">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="need_help_c">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="log_in">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="or">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="continue_wi">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="login_as_a_">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="please_ente">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="error_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">invisible</item>
+
+    </style>
+
+    <style name="bold_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.AppTheme.ButtonBar.Fullscreen" parent="">
+
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <dimen name="_dp3">-3dp</dimen>
+</resources>

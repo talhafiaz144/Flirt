@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginHorizontal="@dimen/dp20"
+    android:layout_marginTop="32dp"
+    android:background="@drawable/rectangle_3"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <EditText
+        android:id="@+id/edit_item_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="Write your interest here"
+        android:textAppearance="@style/continue_wi" />
+</LinearLayout>

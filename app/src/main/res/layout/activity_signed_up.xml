@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivities.SignedUpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/backbtn" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Log In -->
+        <TextView
+            android:id="@+id/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="top"
+            android:text="Sign up"
+            android:textAppearance="@style/log_in"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="2"
+            android:text="Please enter your email we will send you OPT there to verify you"
+            android:textAppearance="@style/please_ente"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/emailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp">
+
+            <EditText
+                android:id="@+id/email_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="@color/cardview_dark_background"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/new_email" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_design"
+            android:text="Send Code"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/or_linear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="1dp"
+                android:background="@drawable/line"></ImageView>
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="or"
+                android:textAppearance="@style/or" />
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="1dp"
+                android:background="@drawable/line"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/google_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rectangle_3"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/my_imageview"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/google" />
+
+                <TextView
+                    android:id="@+id/my_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Continue with Google"
+                    android:textAppearance="@style/continue_wi" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/apple_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangle_3"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/apple" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Continue with Apple"
+                    android:textAppearance="@style/continue_wi" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/as_a_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/login_as_guest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Login as a Guest"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="@style/login_as_a_" />
+
+            <View style="@style/login_line_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/as_a_guest"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/already_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:text="@string/already_acc"
+                android:textAppearance="@style/login_as_a_" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

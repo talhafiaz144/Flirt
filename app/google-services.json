@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "704888684444",
+    "project_id": "flirt-android",
+    "storage_bucket": "flirt-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704888684444:android:42d35bd37e9aada0775259",
+        "android_client_info": {
+          "package_name": "com.example.flirtandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704888684444-scq95ea9j4ep5g1ve64s9qb2cg2v5v12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flirtandroid",
+            "certificate_hash": "88c4bc16517ce592733d1b01a649f5e08ec8aa3d"
+          }
+        },
+        {
+          "client_id": "704888684444-vsd8t7klep4l2gqpjv38vs1hs33grurm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbIOKU2ypZA7zu7XyhKIdemdM9MeOzpr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704888684444-cmrj95be4u7thrk5rdta06jfb15tmjej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
