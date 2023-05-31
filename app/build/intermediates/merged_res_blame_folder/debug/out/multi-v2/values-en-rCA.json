@@ -4,7 +4,7 @@
             "outputFile": "com.example.flirtandroid.app-mergeDebugResources-61:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/hamzashahzad/.gradle/caches/transforms-3/4ce70c2851f8d6b0ed11a2ace94a823a/transformed/appcompat-1.6.1/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/apple/.gradle/caches/transforms-3/4ce70c2851f8d6b0ed11a2ace94a823a/transformed/appcompat-1.6.1/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/hamzashahzad/.gradle/caches/transforms-3/eb609f8c46d0b33abdd8a21589c65f8f/transformed/core-1.9.0/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/apple/.gradle/caches/transforms-3/eb609f8c46d0b33abdd8a21589c65f8f/transformed/core-1.9.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
